@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport warehouse Renee</title>
+    <link rel="stylesheet" href="sw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+</head>
+<body>
+    <div class="wrapper content-center">
+    <header>
+        <div class="topWrapper">
+            <div class="topNav">
+                <div class="content-center">
+                    <!-- Checkbox toggle for dropdown menu -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" hidden>
+
+                    <!-- Label acts as clickable icon -->
+                    <label for="menu-toggle" class="menuTab">
+                        <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+                        <i class="fa-solid fa-xmark close-icon" id="close-icon"></i>
+                        <span>Menu</span>
+                    </label>
+
+                    <!-- Dropdown menu -->
+                    <div class="dropdown-navigation">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About SW</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">View Products</a></li>
+                            </ul> 
+                        </nav>
+                    </div>
+                    <!-- for desktop -->
+                    <div class="nav-links isHidden">
+                        <a href="#">Home</a>
+                        <a href="#">About SW</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">View Products</a>
+                    </div>
+                </div>
+                <div class="nav-links content-center">
+                    <i class="fa-solid fa-lock isHidden" id="login-icon"></i>
+                    <a class="isHidden" href="#" aria-label="Login">Login</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a href="#" aria-label="view cart">View Cart</a>
+                    <p class="items">0 items</p>
+                </div>
+            </div>
+        </div>
+        <!-- above hearder part 1 -->
+        <div class="header-logo-search content-center">
+            <a href="#" aria-label="Home">
+                <h1 aria-label="sport warehouse logo">
+                    <img aria-hidden="true" src="images/Header-imgs/sports-warehouse-logo.png" alt="sport warehouse logo" aria-label="sport warehouse logo">
+                </h1>
+            </a>
+            <div class="content-center">
+                <form>
+                    <input class="searchInput" type="text" name="searchInput" placeholder="Search product input" aria-label="Search product input">
+                </form>
+                <a class="search-icon" href="#" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </div>
+        <!-- above hearder part 2 -->
+        <div class="products-nav content-center">
+            <div class="productsList-mini">
+                <a href="/shoes">Shoes</a>
+                <a href="/helmet">Helmet</a>
+                <a href="/pants">Pants</a>
+                <a href="/tops">Tops</a>
+                <a href="/balls">Balls</a>
+                <a href="/equipment">Equipment</a>
+                <a href="/training">Training gear</a>
+            </div>    
+        </div>
+        <!-- above hearder part 3 -->
+    </header>
+    <div class="main-content">
+        <section class="newRangeDisplay isHidden">
+            <h2 class="sr-only">new Range Display</h2>
+                <div class="newRangeDisplay-content content-center">
+                    <div class="newRangeDisplay-content__text content-center">
+                        <p>View our brand new range of</p>
+                        <p>Sports balls</p>
+                        <button>Shop now</button>
+                    </div>
+                    <div class="indicators">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+        </section>
+        <section class="featured-products">
+            <div class="h2title-wrapper">
+                <h2>Featured products</h2>
+            </div>
+            <div class="products">
+                <article>
+                <h2 class="sr-only">football</h2>
+                <a href="#">
+                    <img src="images/products/prod-image.jpg" alt="football image">
+                    <p class="products-price">
+                        <span class="products-price_discounted">$34.95</span>
+                        <span>
+                            <span class="was">was</span>
+                            <span class="products-price_original">$49.00</span>
+                        </span>
+                    </p>
+                    <p>adidas Euro16 Top Soccer Ball</p>
+                </a>
+                </article>
+                <article>
+                <h2 class="sr-only">helmet</h2>
+                <a href="#">
+                    <img src="images/products/helmet.png" alt="helmet image">
+                    <p class="products-price">$70.00</p>
+                    <p>Pro-tec Classic Skate Helmet</p>
+                </a>
+                </article>
+                <article>
+                <h2 class="sr-only">water bottle</h2>
+                <a href="#">
+                    <img src="images/products/waterbottle.png" alt="water bottle image">
+                    <p class="products-price">
+                        <span class="products-price_discounted">$15.95</span>
+                        <span>
+                            <span class="was">was</span>
+                            <span class="products-price_original">$17.50</span>
+                        </span>
+                    </p>
+                    <p>Nike Sport 600ml Water Bottle</p>
+                </a>
+                </article>
+                <article>
+                <h2 class="sr-only">boxing gloves</h2>
+                <a href="#">
+                    <img src="images/products/boxing-gloves.png" alt="boxing gloves image">
+                    <p class="products-price">$79.95</p>
+                    <p>Sting ArmaPlus Boxing Gloves</p>
+                </a>
+                </article>
+                <article>
+                <h2 class="sr-only">football boots</h2>
+                <a href="#">
+                    <img src="images/products/football-boots.jpg" alt="football-boots image">
+                    <p class="products-price">
+                        <span class="products-price_discounted">$15.95</span>
+                        <span>
+                            <span class="was">was</span>
+                            <span class="products-price_original">$17.50</span>
+                        </span>
+                    </p>
+                    <p>Asics Gel Lethal Tigreor 8 IT Men's</p>
+                </a>
+                </article>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="h2title-wrapper">
+                <h2>Our brands and partnerships</h2>
+            </div>
+            <div class="brands-header">
+                <div class="brands-header_text">
+                    <p>These are some of our top brands and partnerships.</p>
+                    <p>The best of the best is here.</p>
+                </div>
+            <div class="brands-logos">
+                <a><img src="images/brands/logo_nike.png" alt="niki logo"></a>
+                <a><img src="images/brands/logo_adidas.png" alt="adidas logo"></a>
+                <a><img src="images/brands/logo_skins.png" alt="skins logo"></a>
+                <a><img src="images/brands/logo_asics.png" alt="asics logo"></a>
+                <a><img src="images/brands/logo_newbalance.png" alt="newbalance logo"></a>
+                <a><img src="images/brands/logo_wilson.png" alt="wilson logo"></a>
+            </div>
+        </div>
+        </section>
+    </div>
+    <footer>
+    <div class="footer-wrapper">
+        <div class="footer-wrapper__content">
+            <div class="site-navigation">
+                <h2>Site navigation</h2>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About SW</a></li>
+                    <li><a href="/contact">Contact us</a></li>
+                    <li><a href="/view">View Products</a></li>
+                    <li><a href="/policy">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="site-navigation site-productCategories isHidden">
+                <h2>Product categories</h2>
+                <ul>
+                    <li><a href="/shoes">Shoes</a></li>
+                    <li><a href="/helmets">Helmets</a></li>
+                    <li><a href="/pants">Pants</a></li>
+                    <li><a href="/balls">Balls</a></li>
+                    <li><a href="/equirpment">Equipments</a></li>
+                    <li><a href="/trainingGear">Training gear</a></li>
+                </ul>
+            </div>
+            <div class="site-socialMedia">
+                <h2>Contact Sports Warehouse</h2>
+                <div class="site-socialMedia_display content-center">
+                    <div>
+                        <a href="#" aria-label="facebook-icon">
+                            <i class="fa-brands fa-facebook-f content-center"></i>
+                        </a>
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <a href="#" aria-label="facebook-icon">
+                            <i class="fa-brands fa-twitter content-center"></i>
+                        </a>
+                        <p>Twitter</p>
+                    </div>
+                    <div>
+                        <a href="#" aria-label="other social media">
+                            <i class="fa-solid fa-paper-plane content-center"></i>
+                        </a>
+                        <p>Other</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2222 Sports Warehouse.</p>
+                <p>All rights reserved.</p>
+                <p>Website made by Awesomesauce Design
+ and Renee Tong.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
